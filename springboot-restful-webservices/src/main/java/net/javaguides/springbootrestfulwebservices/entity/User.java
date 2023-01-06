@@ -23,6 +23,4 @@ public class User {
     @Column(nullable = false, unique = true)
     private String email;
 
-    public void setId(Long userId) {
-    }
 }
