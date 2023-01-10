@@ -7,6 +7,6 @@ public interface UserService {
     User createUser (User user);
     User getUserById(Long userId);
     List<User> getAllUser();
-    User updateUser(User user);
+    User updateUser(User user) throws Exception;
     void deleteUser(Long userId);
 }
