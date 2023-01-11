@@ -45,6 +45,7 @@ public class UserServiceImpl implements UserService {
         User existUser = userRepository.findById(user.getId()).get();
         existUser.setFirstName(user.getFirstName());
         existUser.setLastName(user.getLastName());
+        // handle duplicate email by not changing the email.
         if (checkEmail(user.getEmail())) {
             existUser.setEmail(getUserById(user.getId()).getEmail());
         } else {
