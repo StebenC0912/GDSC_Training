@@ -1,9 +1,8 @@
 package org.hanu.submit.domain.practiceProblem.service;
 
-import org.hanu.submit.infrastructure.model.inputSubmit;
 import org.springframework.stereotype.Service;
 
 @Service
 public interface submitProblemService {
-    Long submit(inputSubmit inputSubmit);
+    Long submit(Long id, Long coderId, String code, String language, Long problemId);
 }
