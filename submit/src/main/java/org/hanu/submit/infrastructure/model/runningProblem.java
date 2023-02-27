@@ -14,6 +14,9 @@ public class runningProblem {
     private String programmingLanguage;
     private Long problemId;
 
+    public runningProblem() {
+    }
+
     public runningProblem(Long id, Long coderId, String code, String programmingLanguage, Long problemId) {
         this.id = id;
         this.coderId = coderId;
