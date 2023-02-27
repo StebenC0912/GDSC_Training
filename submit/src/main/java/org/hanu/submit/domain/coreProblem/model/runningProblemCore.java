@@ -1,13 +1,13 @@
 package org.hanu.submit.domain.coreProblem.model;
 
-public class runningProblem {
+public class runningProblemCore {
     private Long id;
     private Long coderId;
     private String code;
     private String programmingLanguage;
     private Long problemId;
 
-    public runningProblem(Long id, Long coderId, String code, String programmingLanguage, Long problemId) {
+    public runningProblemCore(Long id, Long coderId, String code, String programmingLanguage, Long problemId) {
         this.id = id;
         this.coderId = coderId;
         this.code = code;
