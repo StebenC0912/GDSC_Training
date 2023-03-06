@@ -1,5 +1,9 @@
 package org.hanu.judger.domain.vm;
 
+import org.hanu.judger.domain.model.KB;
+import org.hanu.judger.domain.model.Millisecond;
+import org.hanu.judger.domain.model.ProgrammingLanguage;
+
 import java.io.IOException;
 
 public interface VirtualMachine {
