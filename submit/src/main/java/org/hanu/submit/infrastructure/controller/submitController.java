@@ -17,6 +17,6 @@ public class submitController {
     @PostMapping("/practiceProblem/submit")
     public ResponseEntity<?> submitCode(@RequestBody inputSubmit inputSubmit) {
         Long id = submitProblemService.submit(inputSubmit.getId(), inputSubmit.getCoderId(), inputSubmit.getCode(), inputSubmit.getProgrammingLanguage(), inputSubmit.getProblemId());
-        return new ResponseEntity<>(id, null, HttpStatus.CREATED);
+        return new ResponseEntity<>(id, null, HttpStatus.OK);
     }
 }

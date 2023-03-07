@@ -1,7 +1,7 @@
 package org.hanu.submit.domain.practiceProblem.service;
 
 
-import org.hanu.submit.domain.coder.repository.coderRepository;
+import org.hanu.submit.domain.coder.repository.CoderRepository;
 import org.hanu.submit.domain.coreProblem.service.submitCoreProblemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class submitProblemServiceImpl implements submitProblemService {
 
     @Autowired
-    private coderRepository coderRepository;
+    private CoderRepository coderRepository;
     @Autowired
     private submitCoreProblemService submitCoreProblemService;
 
