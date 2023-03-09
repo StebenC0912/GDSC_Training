@@ -1,35 +1,48 @@
 package org.hanu.judger.domain.model;
 
+import org.bson.types.ObjectId;
+
+import java.util.Date;
+
 public class RunningSubmission {
-    private String id;
+    private ObjectId id;
+    private ObjectId coderId;
+    private ObjectId problemId;
     private String code;
-    private String language;
-    private String input;
-    private String output;
-    private String expectedOutput;
-    private String status;
-    private String error;
+    private ProgrammingLanguage programmingLanguage;
+    private Date submittedAt;
 
-    public RunningSubmission() {
-    }
-
-    public RunningSubmission(String id, String code, String language, String input, String output, String expectedOutput, String status, String error) {
+    public RunningSubmission(ObjectId id, ObjectId coderId, ObjectId problemId, String code, ProgrammingLanguage programmingLanguage, Date submittedAt) {
         this.id = id;
+        this.coderId = coderId;
+        this.problemId = problemId;
         this.code = code;
-        this.language = language;
-        this.input = input;
-        this.output = output;
-        this.expectedOutput = expectedOutput;
-        this.status = status;
-        this.error = error;
+        this.programmingLanguage = programmingLanguage;
+        this.submittedAt = submittedAt;
     }
 
-    public String getId() {
+    public ObjectId getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(ObjectId id) {
         this.id = id;
+    }
+
+    public ObjectId getCoderId() {
+        return coderId;
+    }
+
+    public void setCoderId(ObjectId coderId) {
+        this.coderId = coderId;
+    }
+
+    public ObjectId getProblemId() {
+        return problemId;
+    }
+
+    public void setProblemId(ObjectId problemId) {
+        this.problemId = problemId;
     }
 
     public String getCode() {
@@ -40,51 +53,19 @@ public class RunningSubmission {
         this.code = code;
     }
 
-    public String getLanguage() {
-        return language;
+    public ProgrammingLanguage getProgrammingLanguage() {
+        return programmingLanguage;
     }
 
-    public void setLanguage(String language) {
-        this.language = language;
+    public void setProgrammingLanguage(ProgrammingLanguage programmingLanguage) {
+        this.programmingLanguage = programmingLanguage;
     }
 
-    public String getInput() {
-        return input;
+    public Date getSubmittedAt() {
+        return submittedAt;
     }
 
-    public void setInput(String input) {
-        this.input = input;
-    }
-
-    public String getOutput() {
-        return output;
-    }
-
-    public void setOutput(String output) {
-        this.output = output;
-    }
-
-    public String getExpectedOutput() {
-        return expectedOutput;
-    }
-
-    public void setExpectedOutput(String expectedOutput) {
-        this.expectedOutput = expectedOutput;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
-    public String getError() {
-        return error;
-    }
-
-    public void setError(String error) {
-        this.error = error;
+    public void setSubmittedAt(Date submittedAt) {
+        this.submittedAt = submittedAt;
     }
 }
