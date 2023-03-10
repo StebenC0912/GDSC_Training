@@ -12,14 +12,16 @@ public class RunningSubmission {
     private ProgrammingLanguage programmingLanguage;
     private Date submittedAt;
 
-    public RunningSubmission(long id, long coderId, long problemId, String code, ProgrammingLanguage programmingLanguage, Date submittedAt) {
+    public RunningSubmission(long id, long coderId, long problemId, String code, String programmingLanguage, Date submittedAt) {
         this.id = id;
         this.coderId = coderId;
         this.problemId = problemId;
         this.code = code;
-        this.programmingLanguage = programmingLanguage;
+        this.programmingLanguage = ProgrammingLanguage.from(programmingLanguage);
         this.submittedAt = submittedAt;
     }
+
+
 
     public long getId() {
         return id;

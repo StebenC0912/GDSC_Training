@@ -53,7 +53,12 @@
 			<artifactId>bson</artifactId>
 			<version>2.3</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>

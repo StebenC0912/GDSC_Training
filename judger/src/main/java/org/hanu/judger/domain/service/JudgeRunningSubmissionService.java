@@ -94,6 +94,7 @@ public class JudgeRunningSubmissionService {
                 submissionRepository.save(submission);
             }
         }
+        runningSubmissionRepository.delete(runningSubmission.getId());
     }
 
     private boolean allThreadsAreActive() {
