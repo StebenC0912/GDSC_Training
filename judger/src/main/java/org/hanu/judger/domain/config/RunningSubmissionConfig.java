@@ -3,17 +3,17 @@ package org.hanu.judger.domain.config;
 import java.util.List;
 
 public interface RunningSubmissionConfig {
-    public int getMaxJudgingThread();
+    int getMaxJudgingThread();
 
-    public int getScanRateMillis();
+    int getScanRateMillis();
 
-    public int getScanLockSecond();
+    int getScanLockSecond();
 
-    public List<String> getVirtualMachineUrls();
+    List<String> getVirtualMachineUrls();
 
-    public String getVirtualMachineToken();
+    String getVirtualMachineToken();
 
-    public String getVirtualMachineUser();
+    String getVirtualMachineUser();
 
-    public boolean getVirtualMachineDeleteSubmission();
+    boolean getVirtualMachineDeleteSubmission();
 }

@@ -5,14 +5,14 @@ import org.bson.types.ObjectId;
 import java.util.Date;
 
 public class RunningSubmission {
-    private ObjectId id;
-    private ObjectId coderId;
-    private ObjectId problemId;
+    private long id;
+    private long coderId;
+    private long problemId;
     private String code;
     private ProgrammingLanguage programmingLanguage;
     private Date submittedAt;
 
-    public RunningSubmission(ObjectId id, ObjectId coderId, ObjectId problemId, String code, ProgrammingLanguage programmingLanguage, Date submittedAt) {
+    public RunningSubmission(long id, long coderId, long problemId, String code, ProgrammingLanguage programmingLanguage, Date submittedAt) {
         this.id = id;
         this.coderId = coderId;
         this.problemId = problemId;
@@ -21,27 +21,27 @@ public class RunningSubmission {
         this.submittedAt = submittedAt;
     }
 
-    public ObjectId getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(ObjectId id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public ObjectId getCoderId() {
+    public long getCoderId() {
         return coderId;
     }
 
-    public void setCoderId(ObjectId coderId) {
+    public void setCoderId(long coderId) {
         this.coderId = coderId;
     }
 
-    public ObjectId getProblemId() {
+    public long getProblemId() {
         return problemId;
     }
 
-    public void setProblemId(ObjectId problemId) {
+    public void setProblemId(long problemId) {
         this.problemId = problemId;
     }
 

@@ -6,5 +6,5 @@ import org.hanu.judger.domain.model.TestCase;
 import java.util.List;
 
 public interface TestCaseRepository {
-    List<TestCase> getTestCasesByProblemId(ObjectId problemId);
+    List<TestCase> getTestCasesByProblemId(long problemId);
 }

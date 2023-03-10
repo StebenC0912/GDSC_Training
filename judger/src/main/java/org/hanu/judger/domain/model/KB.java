@@ -1,7 +1,7 @@
 package org.hanu.judger.domain.model;
 
 public class KB {
-    private double value;
+    private final double value;
     public static KB max(KB a, KB b) {
         return a.value > b.value ? a : b;
     }

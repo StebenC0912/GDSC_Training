@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Scheduler {
     public static abstract class Runner {
-        private AtomicBoolean stop;
+        private final AtomicBoolean stop;
 
         protected Runner() {
             this.stop = new AtomicBoolean(false);
@@ -17,7 +17,7 @@ public class Scheduler {
         protected abstract void run() throws Throwable;
     }
 
-    private Thread thread;
+    private final Thread thread;
     private Runner runner;
 
     public Scheduler(long millis, Runner runner) {

@@ -5,9 +5,9 @@ import org.bson.types.ObjectId;
 import java.util.List;
 
 public class TestCase {
-    private ObjectId problemId;
-    private String input;
-    private String expectedOutput;
+    private final ObjectId problemId;
+    private final String input;
+    private final String expectedOutput;
 
     public TestCase(ObjectId problemId, String input, String expectedOutput) {
         this.problemId = problemId;

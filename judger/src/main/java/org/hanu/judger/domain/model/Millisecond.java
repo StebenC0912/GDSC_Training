@@ -1,7 +1,7 @@
 package org.hanu.judger.domain.model;
 
 public class Millisecond {
-    private float value;
+    private final float value;
     public static Millisecond max(Millisecond a, Millisecond b) {
         return a.value > b.value ? a : b;
     }

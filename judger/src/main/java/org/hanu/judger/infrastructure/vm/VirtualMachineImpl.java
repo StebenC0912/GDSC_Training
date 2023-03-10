@@ -17,8 +17,8 @@ import java.util.Base64;
 
 @Service
 public class VirtualMachineImpl implements VirtualMachine {
-    private ObjectMapper objectMapper;
-    private RunningSubmissionConfig runningSubmissionConfig;
+    private final ObjectMapper objectMapper;
+    private final RunningSubmissionConfig runningSubmissionConfig;
 
     public VirtualMachineImpl(ObjectMapper objectMapper, RunningSubmissionConfig runningSubmissionConfig) {
         this.objectMapper = objectMapper;
@@ -119,14 +119,14 @@ public class VirtualMachineImpl implements VirtualMachine {
     }
 
     public static class RunResultImpl implements RunResult {
-        private String stdout;
-        private String time;
-        private String memory;
-        private String stderr;
-        private String compileOutput;
-        private int status;
+        private final String stdout;
+        private final String time;
+        private final String memory;
+        private final String stderr;
+        private final String compileOutput;
+        private final int status;
 
-        private String stdMessage;
+        private final String stdMessage;
 
         public RunResultImpl(String stdout,
                              String time,
