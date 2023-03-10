@@ -5,20 +5,19 @@ import org.bson.types.ObjectId;
 import java.util.List;
 
 public class TestCase {
-    private final ObjectId problemId;
+    private final long problemId;
     private final String input;
     private final String expectedOutput;
 
-    public TestCase(ObjectId problemId, String input, String expectedOutput) {
+    public TestCase(long problemId, String input, String expectedOutput) {
         this.problemId = problemId;
         this.input = input;
         this.expectedOutput = expectedOutput;
     }
 
-    public ObjectId getProblemId() {
+    public long getProblemId() {
         return problemId;
     }
-
     public String getInput() {
         return input;
     }

@@ -20,6 +20,11 @@ public class Submission {
     public static Submission fromRunningSubmission(RunningSubmission runningSubmission, boolean status){
         return new Submission(runningSubmission.getId(),runningSubmission.getProblemId(),runningSubmission.getProgrammingLanguage(),runningSubmission.getCode(),runningSubmission.getCoderId(),status);
     }
+
+    public long getId() {
+        return id;
+    }
+
     public long getProblemId() {
         return problemId;
     }
@@ -39,5 +44,4 @@ public class Submission {
     public boolean isStatus() {
         return status;
     }
-
 }
